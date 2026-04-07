@@ -10,3 +10,81 @@
     <script src="assets/js/tailwind-config.js"></script>
 </head>
 <body class="bg-fondo text-tierra font-sans antialiased leading-relaxed">
+
+    <nav class="sticky top-0 bg-tierra text-white shadow-md z-50">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex justify-center space-x-6 sm:space-x-10 text-sm sm:text-base font-semibold">
+            <a href="#sobre-mi" class="hover:text-agro-light transition duration-300">Sobre Mí</a>
+            <a href="#servicios" class="hover:text-agro-light transition duration-300">Servicios</a>
+            <a href="#portafolio" class="hover:text-agro-light transition duration-300">Portafolio</a>
+            <a href="#contacto" class="hover:text-agro-light transition duration-300">Contacto</a>
+        </div>
+    </nav>
+
+    <header class="bg-agro text-white py-24 px-6 text-center shadow-inner">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Tu Nombre Aquí</h1>
+        <p class="text-lg md:text-xl text-agro-light max-w-2xl mx-auto font-medium">
+            Desarrolladora de Software | Especialista en Apps Agrícolas, Sustentables y Orgánicas
+        </p>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        
+        <section id="sobre-mi" class="bg-white p-8 md:p-10 rounded-xl shadow-sm mb-12 border border-gray-100">
+            <h2 class="text-3xl font-bold text-agro border-b-2 border-agro-light pb-2 mb-6 inline-block">Tecnología al Servicio de la Tierra</h2>
+            <p class="text-lg text-gray-700">
+                ¡Hola! Soy creadora de soluciones tecnológicas enfocadas en el sector agronómico. Mi objetivo es unir el mundo del desarrollo de software con la agricultura sustentable, creando herramientas digitales que optimicen procesos, promuevan prácticas orgánicas y faciliten el trabajo en el campo.
+            </p>
+        </section>
+
+        <section id="servicios" class="mb-12">
+            <h2 class="text-3xl font-bold text-agro border-b-2 border-agro-light pb-2 mb-8 inline-block">Mis Servicios y Asesorías</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:-translate-y-2 hover:border-agro-light hover:shadow-lg transition-all duration-300 group">
+                    <h3 class="text-xl font-bold text-tierra mb-3 group-hover:text-agro transition-colors">Apps Personalizadas</h3>
+                    <p class="text-gray-600">Creación de aplicaciones a medida para la gestión de campos, control de cultivos orgánicos y automatización de procesos.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:-translate-y-2 hover:border-agro-light hover:shadow-lg transition-all duration-300 group">
+                    <h3 class="text-xl font-bold text-tierra mb-3 group-hover:text-agro transition-colors">Asesoría Tecnológica</h3>
+                    <p class="text-gray-600">Evaluación de las necesidades de tu campo para implementar las mejores herramientas de TI que impulsen tu productividad.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:-translate-y-2 hover:border-agro-light hover:shadow-lg transition-all duration-300 group">
+                    <h3 class="text-xl font-bold text-tierra mb-3 group-hover:text-agro transition-colors">Soluciones E-commerce</h3>
+                    <p class="text-gray-600">Plataformas de venta directa para productores orgánicos, eliminando intermediarios y conectando con el cliente final.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portafolio" class="bg-white p-8 md:p-10 rounded-xl shadow-sm mb-12 border border-gray-100">
+            <h2 class="text-3xl font-bold text-agro border-b-2 border-agro-light pb-2 mb-8 inline-block">Proyectos Destacados</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-fondo p-6 rounded-lg border border-gray-200">
+                    <h3 class="text-2xl font-bold text-tierra mb-2">E-commerce Agrícola Orgánico</h3>
+                    <p class="text-gray-700 mb-6">Plataforma de comercio electrónico desarrollada íntegramente en Django, diseñada para la venta y gestión de insumos y semillas.</p>
+                    <a href="URL_DE_TU_GITHUB" target="_blank" class="inline-block bg-agro text-white font-semibold py-2 px-6 rounded shadow hover:bg-agro-dark hover:shadow-md transition-all duration-300">
+                        Ver código en GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-agro mb-4">Hablemos de tu próximo proyecto</h2>
+            <p class="text-lg text-gray-700 mb-8">¿Tienes una idea para modernizar tu campo o necesitas una aplicación a medida? ¡Escríbeme!</p>
+            
+            <div class="inline-block text-left bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                <p class="mb-3 text-lg">📧 <span class="font-semibold ml-2">Email:</span> <a href="mailto:tu-correo@email.com" class="text-agro hover:underline font-bold">tu-correo@email.com</a></p>
+                <p class="mb-3 text-lg">💻 <span class="font-semibold ml-2">GitHub:</span> <a href="URL_DE_TU_GITHUB" class="text-agro hover:underline font-bold">github.com/tu-usuario</a></p>
+                <p class="text-lg">📍 <span class="font-semibold ml-2">Ubicación:</span> Chillán, Ñuble, Chile</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-tierra text-gray-300 py-8 text-center mt-auto">
+        <p class="text-sm">&copy; 2026 Tu Nombre. Desarrollando tecnología para un futuro sustentable.</p>
+    </footer>
+
+</body>
+</html>
