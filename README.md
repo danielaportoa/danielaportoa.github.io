@@ -1,14 +1,13 @@
-# 👋 Me llamo Daniela Porto
+# 👋 Me llamo Daniela Porto Agulera
 
-> **Uniendo el desarrollo de software con el futuro del campo y la agricultura sustentable.** 🌱💻
+> **Desarrollo de software agricola para una agricultura mas sustentable.** 🌱💻
 
-Soy desarrolladora de software. Me apasiona crear soluciones tecnológicas que optimicen los procesos agronómicos, promuevan prácticas orgánicas y faciliten el trabajo diario en el campo.
+Soy desarrolladora de software. Me apasiona crear soluciones tecnológicas que optimicen los procesos agronómicos, promuevan prácticas sostebles en el tiempo y faciliten el trabajo diario en el campo.
 
 ### 🌱 Sobre Mí
 
-- 🎓 Estudiando Tecnologías de la Información.
 - 💻 Me especializo en el desarrollo web utilizando la arquitectura nativa de **Django** (ORM, vistas y templates).
-- 🎯 Mi enfoque principal es el desarrollo de aplicaciones para la gestión de campos, trazabilidad de cultivos e-commerce para productores directos.
+- 🎯 Mi enfoque principal es el desarrollo de aplicaciones para las gestiónes y procesos del campo, trazabilidad de cultivos, e-commerce para productores directos.
 - 💬 Pregúntame sobre: **Python, Django y tecnología para el agro.**
 
 ### 🛠️ Tecnologías y Herramientas
@@ -28,9 +27,9 @@ Soy desarrolladora de software. Me apasiona crear soluciones tecnológicas que o
 
 ### 📫 Cómo contactarme
 
-- ✉️ **Email:** [tu-correo@email.com](mailto:tu-correo@email.com)
-- 💼 **LinkedIn:** [Tu Perfil de LinkedIn](Enlace-a-tu-linkedin)
-- 🌐 **Portafolio Web:** [Enlace a tu landing page](Enlace-a-tu-landing-page)
+- ✉️ **Email:** [tu-correo@email.com] danielaportoaguilera@gmail.com
+- 💼 **LinkedIn:** [Tu Perfil de LinkedIn] https://www.linkedin.com/in/daniela-porto-aguilera-59124544/
+- 🌐 **Portafolio Web:** [Enlace a tu landing page] https://danielaportoa.github.io/
 
 ---
 ⭐️ *De código a semilla, cultivando tecnología.* ⭐️
