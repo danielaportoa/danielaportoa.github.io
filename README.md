@@ -2,7 +2,7 @@
 
 Una Desarrolladora de Software 🧑‍💻 especializada en **Python** 🐍 y el ecosistema **Django** 🚀, con la habilidad de construir aplicaciones sólidas y eficientes. Me especializo en el desarrollo de software orientado al **sector agronómico 🌱, la agricultura sustentable y las soluciones orgánicas**, abarcando desde la ideación hasta la implementación del producto final.
 
-Me apasiona crear soluciones tecnológicas que optimicen los procesos agronómicos, promuevan prácticas sostebles en el tiempo y faciliten el trabajo diario en el campo. Estoy siempre en busca de transformar ideas en soluciones tangibles 💡, y disfruto cada paso del proceso creativo para hacer que la tecnología en zonas rurales sea accesible, eficiente y moderna.
+Me motiva crear soluciones tecnológicas que optimicen los procesos agronómicos, promuevan prácticas sostebles en el tiempo y faciliten el trabajo diario en el campo. Estoy siempre en busca de transformar ideas en soluciones tangibles 💡, y disfruto cada paso del proceso creativo para hacer que la tecnología en zonas rurales sea accesible, eficiente y moderna.
 
 ### 💼 Proyectos
 
