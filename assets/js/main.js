@@ -21,3 +21,77 @@ document.addEventListener("DOMContentLoaded", () => {
         observadorDeScroll.observe(elemento);
     });
 });
+
+// ==========================================
+    // LÓGICA DEL CARRUSEL DE LA CABECERA
+    // ==========================================
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.dot');
+    const btnPrev = document.querySelector('.carousel-btn.prev');
+    const btnNext = document.querySelector('.carousel-btn.next');
+    
+    let slideActual = 0;
+    let intervaloCarrusel;
+
+    // Función principal para cambiar de slide
+    function mostrarSlide(indice) {
+        // Quitar la clase 'active' de todos
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+
+        // Lógica de bucle (si pasa del último, vuelve al primero y viceversa)
+        if (indice >= slides.length) slideActual = 0;
+        if (indice < 0) slideActual = slides.length - 1;
+
+        // Mostrar el slide correspondiente
+        slides[slideActual].classList.add('active');
+        dots[slideActual].classList.add('active');
+    }
+
+    function siguienteSlide() {
+        slideActual++;
+        mostrarSlide(slideActual);
+    }
+
+    function anteriorSlide() {
+        slideActual--;
+        mostrarSlide(slideActual);
+    }
+
+    // Autoplay automático cada 5 segundos
+    function iniciarAutoplay() {
+        intervaloCarrusel = setInterval(siguienteSlide, 5000); 
+    }
+
+    // Reiniciar el contador si el usuario hace clic manualmente
+    function reiniciarAutoplay() {
+        clearInterval(intervaloCarrusel);
+        iniciarAutoplay();
+    }
+
+    // Escuchadores de eventos para los botones
+    if(btnNext && btnPrev) {
+        btnNext.addEventListener('click', () => {
+            siguienteSlide();
+            reiniciarAutoplay();
+        });
+
+        btnPrev.addEventListener('click', () => {
+            anteriorSlide();
+            reiniciarAutoplay();
+        });
+    }
+
+    // Escuchadores para los puntitos indicadores
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            slideActual = index;
+            mostrarSlide(slideActual);
+            reiniciarAutoplay();
+        });
+    });
+
+    // Iniciar el carrusel al cargar la página
+    if(slides.length > 0) {
+        iniciarAutoplay();
+    }
