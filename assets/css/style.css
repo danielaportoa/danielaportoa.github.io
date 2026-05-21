@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-tierra: #DDD0C8;  /* Café oscuro */
+    --color-agro: #2E7D32;         /* Verde principal */
+    --color-agro-light: #4CAF50;   /* Verde claro para hovers */
+    --color-fondo: #F9FAFB;        /* Gris muy claro para el fondo */
+    --color-texto: #374151;        /* Gris oscuro para lectura */
+    --color-marfil: #FAF5E9;
+    --color-marron: #582C12;        /* Marrón aside */
+    --fuente-principal: system-ui, -apple-system, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--color-tierra);
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* --- MENÚ LATERAL / NAVEGACIÓN --- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-tierra);
+    color: var(--color-marron);
+    z-index: 50;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-content {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.sidebar-brand {
+    display: none;
+}
+
+.nav-link {
+    color: var(--color-blanco);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-agro-light);
+}
+
+/* --- LOGO --- */
+.logo-dp{
+    width: 120px;
+    height: 120px;
+    background-color: var(--color-tierra);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-left: 10%;
+    color: var(--color-blanco);
+}
+
+/* --- REDES SOCIALES --- */
+.social-links {
+    display: flex;
+    justify-content: baseline;
+    margin-top: 2rem;
+    margin-left: 8%;
+    gap: 1.5rem;
+    padding: 0.5rem;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.main-wrapper {
+    margin-top: 60px; /* Espacio para el menú superior en móviles */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-w-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* --- HERO (CABECERA) --- */
+.hero {
+    background-color: var(--color-tierra);
+    color: var(--color-marron);
+    padding: 6rem 1.5rem;
+    text-align: center;
+    box-shadow: inset 0 -4px 6px rgba(0,0,0,0.1); 
+}
+
+.hero h1 {
+    color: var(--color-marron);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: var(--color-texto) 1px 1px 2px 
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--color-agro);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- COMPONENTES Y TARJETAS --- */
+.section-title {
+    color: var(--color-agro);
+    border-bottom: 3px solid var(--color-agro-light);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.section-margin {
+    margin-bottom: 4rem;
+}
+
+.card {
+    background-color: var(--color-blanco);
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.card-small { padding: 1.5rem; text-align: center; font-weight: bold; }
+.card-peque { color: var(--color-tierra); margin: 0; }
+
+.card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s; }
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    border-color: var(--color-agro-light);
+}
+.card-hover:hover h3 { color: var(--color-agro); }
+
+/* --- GRIDS (CUADRICULAS) --- */
+.grid-stack {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.grid-servicios, .grid-portafolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* Tarjetas de Proyectos */
+.card-proyecto {
+    background-color: #f3f4f6;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    background-color: var(--color-agro);
+    color: var(--color-blanco);
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+.btn:hover { background-color: #1b5e20; color: white; }
+
+/* Contacto */
+.contacto-section { text-align: center; margin-bottom: 3rem; }
+.card-contacto {
+    display: inline-block;
+    text-align: left;
+    margin-top: 1.5rem;
+}
+.card-contacto p { margin: 0.8rem 0; font-size: 1.1rem; }
+.link-agro { color: var(--color-agro); font-weight: bold; }
+.link-agro:hover { text-decoration: underline; }
+
+/* Footer */
+.footer {
+    background-color: var(--color-tierra);
+    color: #d1d5db;
+    text-align: center;
+    padding: 2rem;
+    margin-top: auto;
+}
+
+/* --- ANIMACIONES (Fade In UX) --- */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    visibility: hidden;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, visibility, transform;
+}
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+/* =========================================================
+   DISEÑO RESPONSIVO (COMPUTADORAS Y TABLETS GRANDES) 
+   ========================================================= */
+@media (min-width: 768px) {
+    /* El menú pasa a ser lateral */
+    .sidebar {
+        width: 260px;
+        height: 100vh;
+        box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .sidebar-content {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 3rem 2rem;
+        gap: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .sidebar-brand {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .sidebar-brand h2 { color: var(--color-blanco); margin-bottom: 0.2rem; }
+    .sidebar-brand p { color: var(--color-agro-light); margin: 0; font-size: 0.9rem; }
+
+    .nav-link:hover { transform: translateX(8px); }
+
+    /* El contenido principal se empuja a la derecha */
+    .main-wrapper {
+        margin-left: 260px;
+        margin-top: 0;
+    }
+
+    /* Las grillas se adaptan a más columnas */
+    .grid-stack { grid-template-columns: repeat(4, 1fr); }
+    .grid-servicios { grid-template-columns: repeat(3, 1fr); }
+    .grid-portafolio { grid-template-columns: repeat(2, 1fr); }
+    
+    /* El proyecto del Juego del Gato ocupa las dos columnas */
+    .proyecto-largo { grid-column: span 2; }
+    
+    .hero h1 { font-size: 3.5rem; }
+}
